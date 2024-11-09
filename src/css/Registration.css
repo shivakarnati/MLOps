@@ -1,0 +1,158 @@
+
+.login-dark {
+    background: #2c3e50; /* Darker background for better contrast */
+    padding: 60px;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Registration & Login form styles */
+.registration-form {
+    background: #34495e; /* Slightly lighter dark background */
+    padding: 40px;
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Larger shadow for depth */
+    width: 100%;
+    max-width: 450px; /* Slightly wider form */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.registration-form:hover {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4); /* Hover effect */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Form group spacing */
+.registration-form .form-group {
+    margin-bottom: 25px; /* Increased space between fields */
+}
+
+/* Form label styling */
+.registration-form .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ecf0f1; /* Lighter text for labels */
+}
+
+/* Input fields */
+.registration-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 16px;
+    transition: border-color 0.3s ease; /* Input focus transition */
+}
+
+.registration-form input:focus {
+    border-color: #1abc9c; /* Highlight color on focus */
+    outline: none;
+}
+
+/* Button styles */
+.registration-form .btn {
+    background: #27ae60; /* Green color for a fresh, modern look */
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.registration-form .btn:hover {
+    background-color: #2ecc71; /* Lighter green when hovered */
+}
+
+/* Illustration area */
+.illustration {
+    text-align: center;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.illustration i {
+    font-size: 100px; /* Larger icon */
+    color: #f39c12; /* Bright color for visual appeal */
+    transition: transform 0.3s ease; /* Icon hover effect */
+}
+
+.illustration i:hover {
+    transform: rotate(10deg); /* Slight rotation on hover */
+}
+
+/* Link to login from registration */
+.login-link {
+    color: #27ae60; /* Green color for links */
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    margin-top: 15px; /* Spacing between button and link */
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* For login form */
+.login-form {
+    background: #34495e; /* Slightly lighter dark background */
+    padding: 40px;
+    border-radius: 12px; /* Soft rounded corners */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Larger shadow for depth */
+    width: 100%;
+    max-width: 450px; /* Slightly wider form */
+    transition: all 0.3s ease;
+}
+
+.login-form:hover {
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.login-form .form-group {
+    margin-bottom: 25px;
+}
+
+.login-form .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #7f8c8d;
+    border-radius: 8px;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 16px;
+}
+
+.login-form input:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+.login-form .btn {
+    background: #27ae60;
+    border: none;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.login-form .btn:hover {
+    background-color: #2ecc71;
+}

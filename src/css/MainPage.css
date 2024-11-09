@@ -1,0 +1,250 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .buttons {
+     position:absolute;
+     top:0.5em;
+     right:0;
+     display: flex;
+     gap: 10px;
+ }
+ 
+.heading{
+    font-size: 24px;
+    color: black;
+    align-items: center;
+}
+
+.register, .login {
+  margin: 0 10px;
+}
+
+button {
+  background-color: #4CAF50; /* Green color for primary look */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#607d8b 15%, #000000 100%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body, body * {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #243035;
+  margin: 5vh 0;
+  text-shadow: 1px 1px 1px #00000070, -1px -1px 1px #f1f1f12b;
+  position: relative;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5em;
+  color: #00000000;
+}
+
+.title:before {
+  position: relative;
+  content: "DUMP";
+  text-shadow: 1px 1px 1px #00000045, 0px 0px 1px #a4f0ff70;
+}
+
+input.changepos {
+  width: 100%;
+  height: 320px;
+  opacity: 0;
+  position: absolute;
+  z-index: 3333;
+  margin: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.click {
+  position: relative;
+  margin: 0 auto;
+  width: 280px;
+  height: 320px;
+  top: 4vh;
+}
+
+.click:before, .click:after {
+  content: "CHECK OUT THE MODELS HERE";
+  position: absolute;
+  bottom: -9vh;
+  text-align: center;
+  width: 280px;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  filter: blur(1px);
+}
+
+.click:after {
+  filter: none;
+  color: #1c2428;
+}
+
+.click:hover:before, .click:hover:after {
+  color: #9fe7ff40;
+  text-shadow: 0 0 1px #9de8ff4f;
+}
+
+.glass {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 280px;
+  height: 320px;
+  border-radius: 140px/50px;
+  background-color: rgb(255 255 255 / 0.15);
+  top: 0%;
+  border: 10px solid rgb(255 255 255 / 0.15);
+  box-shadow: 0px 5px 15px -10px #000;
+}
+
+.glass:before, .glass:after {
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: 280px;
+  height: 105px;
+  border-radius: 140px/50px;
+  content: "";
+  border: 10px solid rgb(255 255 255 / 0.14);
+  box-sizing: border-box;
+  box-shadow: 0 0 100px 1000px #ffffff1f;
+  z-index: 333;
+}
+
+.glass:after {
+  top: initial;
+  bottom: -10px;
+  border: 10px solid rgb(255 255 255 / 5%);
+  box-shadow: none;
+  z-index: -1;
+}
+
+
+.water {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 260px;
+  height: 320px;
+  border-radius: 140px/50px;
+  background-color: rgb(3 169 244 / 0.5);
+  top: 16%;
+  animation: waterlevel 3.75s ease-out 0s 1;
+}
+
+.water:before {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 260px;
+  height: 85px;
+  border-radius: 130px/42px;
+  content: "";
+  box-shadow: 0 0 100px 0px #ffffff57;
+  z-index: 0;
+  background: radial-gradient(#80c2e038, #52a7cdb5, #00212f00);
+}
+
+.water:after {
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 260px;
+  height: 95px;
+  border-radius: 140px/50px;
+  content: "";
+  z-index: 333;
+  background: rgb(0 188 212 / 15%);
+  bottom: 0;
+  z-index: -1;
+  background: rgb(0 188 212 / 5%);
+}
+
+
+input.changepos + .drop {
+  position: absolute;
+  width: 10px;
+  height: 12px;
+  background: #69b4d5;
+  border-radius: 100% 0 100% 100%;
+  border-bottom: 1px solid #3ea4d0;
+  z-index: 1;
+  opacity: 0;
+  top: 40px;
+  animation: dripping 2s ease-out 0.25s 1;
+  left: -8px;
+  transform: translate(14px, 5px) rotate(90deg);
+}
+
+input.changepos:checked + .drop {
+  animation: redripping 2s ease-out 0.25s 1;
+}
+
+input.changepos + .drop:before, input.changepos + .drop:after {
+  position: absolute;
+  width: 5px;
+  height: 6px;
+  background: #69b4d5;
+  border-radius: 100% 0 100% 100%;
+  border-bottom: 1px solid #3ea4d0;
+  z-index: 1;
+  content: "";
+  top: 5px;
+  left: -10px;
+  animation: minidrop 2.5s ease-out 0.25s 1;
+}
+
+input.changepos + .drop:after {
+  animation: minidrop 3.5s ease-out 0.25s 1;
+  top: 0px;
+  left: 0px;
+}
+
+input.changepos:checked + .drop:before {
+  animation: reminidrop 2.5s ease-out 0.25s 1;
+}
+
+input.changepos:checked + .drop:after {
+  animation: reminidrop 3.5s ease-out 0.25s 1;
+}
