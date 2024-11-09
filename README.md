@@ -7,4 +7,4 @@ This project will be created using
 6. React
 
 
-[!main page][public/images/main_page.png]
+![main page][public/images/main_page.png]
