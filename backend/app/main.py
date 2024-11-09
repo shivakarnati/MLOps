@@ -60,8 +60,8 @@ def register_user(user: UserCreate, db: Session = Depends(get_db)):
     # Check if user already exists
     if db.query(User).filter(User.email == user.email).first():
         raise HTTPException(status_code=400, detail="Email already registered")
-    
-    # Create new user with hashed password
+
+    # Hash the password    
     hashed_password = get_password_hash(user.password)
     new_user = User(
         name=user.name,
